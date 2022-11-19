@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pyversion: ['3.7', '3.8', '3.9', '3.10', '3.11']
+        pyversion: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         os: ['ubuntu-18.04', 'macos-latest', 'windows-latest']
     steps:
     - uses: actions/checkout@v3
@@ -81,7 +81,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pyversion: ['3.7', '3.8', '3.9', '3.10', '3.11']
+        pyversion: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         os: ['ubuntu-18.04', 'macos-latest', 'windows-latest']
     steps:
     - uses: actions/checkout@v3
@@ -114,7 +114,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pyversion: ['3.7', '3.8', '3.9', '3.10', '3.11']
+        pyversion: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         os: ['ubuntu-latest', 'macos-latest', 'windows-latest']
     steps:
     - name: Download PyMeshLab_${{ runner.os }}_python${{ matrix.pyversion }}
@@ -149,7 +149,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pyversion: ['3.7', '3.8', '3.9', '3.10', '3.11']
+        pyversion: ['3.6', '3.7', '3.8', '3.9', '3.10', '3.11']
         os: ['ubuntu-latest', 'macos-latest', 'windows-latest']
     steps:
     - name: Download pymeshlab_whl_${{ runner.os }}_python${{ matrix.pyversion }}
